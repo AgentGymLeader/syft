@@ -10,6 +10,6 @@ const (
 	// 16.1.1 - correct elf package osCpe field according to the document of systemd (also add appCpe field)
 	// 16.1.2 - placeholder for 16.1.2 changelog
 	// 16.1.3 - add GGUFFileParts to GGUFFileHeader metadata
-	// 16.1.4 - add SafeTensorsMetadata
+	// 16.1.4 - add SafeTensorsModelInfo
 
 )
