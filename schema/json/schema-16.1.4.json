@@ -4076,7 +4076,7 @@
         },
         "metadataHash": {
           "type": "string",
-          "description": "MetadataHash is an xxhash of the normalized header metadata, providing a stable\nidentifier for identical model content across repositories or filenames."
+          "description": "MetadataHash is an xxhash over the on-disk SafeTensors header (sorted tensor\nentries + __metadata__). It is derived ONLY from the safetensors file bytes —\nnever from OCI manifest, layer descriptor, or config-blob fields — so the same\nmodel content scanned via a directory source and via an OCI image produces the\nsame value. Treat this as the cross-source content fingerprint."
         },
         "parts": {
           "items": {
